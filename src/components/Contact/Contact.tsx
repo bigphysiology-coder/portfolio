@@ -18,7 +18,7 @@ export default function Contact() {
         </h2>
       </div>
       <p className="text-text-secondary text-sm sm:text-lg mb-8 sm:mb-10 max-w-xl mx-auto mt-6 sm:mt-8">
-        Available for full-time roles — remote or Nigeria-based. If you have a project, an
+        Available for full-time roles or remote work. If you have a project, an
         idea, or an opportunity, let's talk.
       </p>
 

@@ -239,7 +239,7 @@ function CodeSyntaxOverlay() {
       {items.map((item, i) => (
         <span
           key={i}
-          className="absolute font-mono text-text-secondary/10"
+          className="absolute font-mono text-text-secondary/30"
           style={{
             left: `${item.left}%`,
             top: `${item.top}%`,

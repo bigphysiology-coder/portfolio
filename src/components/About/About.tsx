@@ -28,12 +28,12 @@ export default function About() {
 
         <div className="space-y-5 text-text-secondary leading-relaxed text-base md:text-lg flex-1">
         <p>
-          I'm a Full Stack Software Engineer specializing in the PERN stack — PostgreSQL, Express,
+          I am a Full Stack Software Engineer specialized in using PostgreSQL, Express,
           React, and Node.js. I build production-grade web applications from the ground up, handling
           everything from system architecture and database design to frontend UX and cloud deployment.
         </p>
         <p>
-          I've independently designed, built, and shipped two full-stack products serving real users:
+          I have independently designed, built, and shipped full-stack products serving real users:
           <span className="text-accent"> Drivefort</span>, a car marketplace with Cloudinary media
           pipelines and JWT admin auth, and{' '}
           <span className="text-accent"> Skolerr</span>, an intelligent scholarship discovery

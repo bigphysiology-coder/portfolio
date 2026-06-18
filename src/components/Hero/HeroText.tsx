@@ -58,17 +58,24 @@ export default function HeroText() {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const splitLetters = (text: string) =>
-    text.split('').map((char, i) => (
-      <span
-        key={i}
-        className="hero-letter inline-block"
-        style={{ perspective: '800px' }}
-        data-animate
-      >
-        {char === ' ' ? '\u00A0' : char}
+  const splitLetters = (text: string) => {
+    const words = text.split(' ')
+    return words.map((word, wi) => (
+      <span key={wi} className="inline-block whitespace-nowrap">
+        {word.split('').map((char, ci) => (
+          <span
+            key={ci}
+            className="hero-letter inline-block"
+            style={{ perspective: '800px' }}
+            data-animate
+          >
+            {char}
+          </span>
+        ))}
+        {wi < words.length - 1 && '\u00A0'}
       </span>
     ))
+  }
 
   return (
     <div ref={containerRef} className="relative z-10 flex flex-col items-center text-center px-4 w-full max-w-4xl mx-auto -mt-16 md:-mt-20">
@@ -76,7 +83,7 @@ export default function HeroText() {
         Abdulrasheed Abdulrazak
       </span>
 
-      <h1 className="hero-headline font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 sm:mb-8 text-white tracking-tight" style={{ perspective: '1000px' }}>
+      <h1 className="hero-headline font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] mb-6 sm:mb-8 text-white tracking-tight" style={{ perspective: '1000px' }}>
         <span className="block">{splitLetters('Full Stack Developer')}</span>
         <span className="block">{splitLetters('Building Scalable Web Apps')}</span>
       </h1>

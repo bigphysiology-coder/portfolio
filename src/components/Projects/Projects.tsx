@@ -25,7 +25,7 @@ export default function Projects() {
         </h2>
       </div>
       <p className="text-text-secondary text-sm sm:text-lg mb-8 sm:mb-12 max-w-xl">
-        Real products shipped to production — from concept to deployment.
+        Real products shipped to production, from concept to deployment.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6">

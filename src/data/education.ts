@@ -15,7 +15,7 @@ export const education: Education[] = [
     location: 'Nigeria',
   },
   {
-    degree: 'Professional Certificate',
+    degree: 'Specialization Certificate',
     field: 'Software Engineering',
     period: '2025 – 2026',
     school: 'The Hong Kong University of Science and Technology',
